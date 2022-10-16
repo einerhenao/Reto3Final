@@ -33,7 +33,7 @@ public class TReservations implements Serializable { //serializacion que convier
     @Column(name = "devolutionDate", nullable = true)//Not Null
     private Date devolutionDate;
     @Column(name = "status", nullable = true)//Not Null
-    private String status;
+    private String status= "created";
     @ManyToOne //Relacion de Muchos a Uno
     @JoinColumn(name = "cabin")//Se adiciona una columna mas que se va a llamar client
     @JsonIgnoreProperties("reservations")
